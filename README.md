@@ -35,7 +35,9 @@ The system uses a relational database to manage users and track notification his
 2. Install dependencies
 3. Database Configuration
 the database structure is provided in the repository. To set up your MySQL instance:
+
 ->Create a new database in your MySQL server.
+
 ->Run the commands found in the schema.sql (or your filename) file to create the necessary tables (users, user_keywords, seen_news).
 4. Environment Variables
 Create a .env file in the root directory with your credentials:
@@ -47,8 +49,7 @@ BOT_sender_gmail=your_email@gmail.com
 BOT_sender_password=your_app_password
 
 #Usage
-Run the main bot engine:
-python main.pyw
+Run the main bot engine: python main.pyw
 
 The system will automatically scrape the latest news, cross-reference them with user preferences, and send email notifications for new matches.
 
