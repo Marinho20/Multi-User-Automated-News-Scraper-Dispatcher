@@ -8,16 +8,25 @@ The system uses a relational database to manage users and track notification his
 #Key Features
 
 ->Multi-User Scalability: Manages individual profiles, keywords, and history for multiple users.
+
 ->Intelligent Filtering: Real-time headline scanning matched against custom user-defined keywords.
+
 ->Duplicate Prevention: Tracks "seen news" in a MySQL database to avoid spamming users with the same content.
+
 ->Automated SMTP Delivery: Formatted email alerts sent via Gmail's secure SMTP protocol.
+
 ->Secure Configuration: Uses environment variables (.env) for sensitive credentials.
 
 #Tech Stack
+
 ->Language: Python 3.12+
+
 ->Database: MySQL
+
 ->Scraping: BeautifulSoup4 / Requests
-->Email: SMTP / MIME
+
+->Email: SMTP / MIME 
+
 ->Environment: Python-dotenv
 
 #Instalation and Setup
@@ -40,12 +49,19 @@ BOT_sender_password=your_app_password
 #Usage
 Run the main bot engine:
 python main.pyw
+
 The system will automatically scrape the latest news, cross-reference them with user preferences, and send email notifications for new matches.
 
 #Dependencies
+
 Run de comand "pip install -r requirements.txt"
+
 Libraries included in requirements.txt:
+
 ->beautifulsoup4: For parsing HTML and extracting news.
+
 ->requests: To handle HTTP connections to the news source.
+
 ->mysql-connector-python: To communicate with your MySQL database.
+
 ->python-dotenv: To securely load your credentials from the .env file.
